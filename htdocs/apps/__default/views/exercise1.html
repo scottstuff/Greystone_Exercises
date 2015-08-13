@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Zend Framework: Documentation</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="mainWrapper">
+<h1>Personal Profile</h1>
+<table>
+<tr><td>Name:</td><td><input name="name" type="text" value="" length="50"></td></tr>
+<tr><td>Address 1:</td><td><input name="address1" type="text" value="" length="50"></td></tr>
+<tr><td>State:</td><td><input name="state" type="text" value="" length="50"></td></tr>
+<tr><td>City:</td><td><input name="city" type="text" value="" length="50"></td></tr>
+</table>
+
+ <table align="center" border="1">
+ <form id="personal_profile_form" action="exercise1.php" method="post">
+	<tr><th colspan="2" align="center"><h1>Personal Profile</h1></th></tr>
+    <tr><td align="right"><label for="name">Name:</label>&nbsp;</td><td><input id="name" type="text" name="name" size="30" value="<?php echo $name ?>" /></td></tr>
+    <tr><td align="right"><label for="email">Email:</label>&nbsp;</td>
+    <td><input id="email" type="text" name="email" size="50" value="<?php echo $name ?>" /></td></tr>
+    <tr><td align="right"><label for="ppform">Make email visable:</label>&nbsp;</td>
+    	<td><label for="yes">Yes</label><input id="yes" type="radio" name="email_visable" value="Y" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="no">No</label><input id="no" type="radio" name="email_visable" value="N" />
+    </td></tr>
+    <tr><td align="right"><label for="occupation_id">Occupation:</label>&nbsp;</td><td><input id="occupation_id" type="text" name="occupation_id" size="30" value="" /></td></tr>
+    <tr><td align="right"><label for="countrycodes_id">Country of Residence:</label>&nbsp;</td><td><input id="countrycodes_id" type="text" name="countrycodes_id" size="30" value="" /></td></tr>
+    <tr><td align="right"><label for="gender">Gender:</label>&nbsp;</td>
+    	<td><label for="male">Male</label><input id="mail" type="radio" name="gender" value="M" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="female">Female</label><input id="female" type="radio" name="gender" value="M" />
+    </td></tr>
+    <tr><td align="right"><label for="age">Age:</label>&nbsp;</td><td><input id="age" type="text" name="age" size="30" value="" /></td></tr>
+    <tr><td colspan="2" align="center"><input type="submit" name="update_profile" value="Submit" /></td></tr>
+ </form>
+</table>
+    <p>
+    <a href="#" class="show-overlay">Click to show overlay</a>
+    </p>
+</div>
+</body>
+</html>

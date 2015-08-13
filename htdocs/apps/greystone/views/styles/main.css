@@ -1,0 +1,266 @@
+html {
+    width: 100%;
+    height: 100%;
+    font:14px/1.231 arial,helvetica,clean,sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#FFF;
+    text-align:center;
+    background:transparent url('http://technology.cos.ucf.edu/include/image/stylesheet/base/bg.jpg') no-repeat fixed top;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color:#FFF;
+    text-align:center;
+    background:transparent url('/apps/greystone/views/img/bg.sections.png') no-repeat top;
+}
+h1 {
+  font-weight:bold;
+  font-size:185%
+}
+
+h2 {
+  font-weight:normal;
+  font-size:185%
+}
+
+.maincontent {
+  top : 0px;
+  margin : 0px;
+  padding : 3px;
+  color : #000000;
+}
+.hd {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color:#FFF;
+    text-align:center;
+}
+
+.ft {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color:#FFF;
+    text-align:center;
+    background:transparent url('/apps/greystone/views/img/bg.ft.png') no-repeat top;
+}
+
+.formcontent {
+    color:#000;
+    text-align:left;
+	position: relative;
+	text-align: left;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#overlay {
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: #000000;
+    background: url('../img/overlay.png') repeat 0 0;
+    display: none;
+    text-align: center;
+}
+
+#overlay-panel {
+    margin: 10% auto 0 auto;
+    width: 350px;
+    background: #FFF;
+    color: #000000;
+}
+
+/** ie6 and below only **/
+* html #overlay {
+    background-image: url('../img/overlay-ie6.png');
+    height: 100%;
+    position: absolute;
+}
+p, ul, ol {
+    color: #000000;
+    line-height: 1.5em;
+    margin: 0 0 20px 0;
+}
+ul, ol { margin: 0 0 15px 20px }
+form input,
+form label {
+    vertical-align: middle;
+    font-weight:bold;
+}
+
+input.txt {
+	color: #00008B;
+    background-color: #ADD8E6;
+	border: 1px insert #00008B;
+	width: 200px;
+	padding: 2px 4px 2px 4px;
+}
+input.btn {
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px outset #00008B;
+	padding: 2px 4px 2px 4px;
+}
+input.err {
+	color: #00008B;
+	background-color: #F00;
+	border: 1px insert #00008B;
+	width: 200px;
+}
+select.txt {
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px insert #00008B;
+	width: 200px;
+}
+select.btn {
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px outset #00008B;
+	padding: 2px 4px 2px 4px;
+}
+select.err {
+	color: #00008B;
+	background-color: #F00;
+	border: 1px insert #00008B;
+	width: 200px;
+}
+form div {
+	clear: left;
+	margin: 0;
+	padding: 0;
+	padding-top: 0.6em;
+}
+form div label {
+  float: left;
+  width: 40%;
+  text-align: right;
+}
+fieldset {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%
+}
+#formwrapper {
+	position: relative;
+	text-align: left;
+	width: 760px;
+}
+
+form fieldset { border: 0 }
+form dl dd { margin: 0 0 10px 0 }
+form p,
+form dl dt { margin: 0 0 5px 0 }
+form dl {
+    color: #000000;
+    height: 100%;
+	width: 120%;
+    overflow: hidden;
+}
+.form_standard fieldset {
+    background: #FBFBFB;
+    border-bottom: 1px dotted #BBB;
+    padding: 10px;
+}
+.form_standard p { margin: 0 0 20px 0 }
+.form_standard .input_checkbox dd {
+    float: left;
+    width: 350px;
+}
+.form_standard .input_checkbox ul {
+    list-style: none;
+    margin: 0 !important;
+}
+form .input_checkbox input { margin: 0 10px 0 0 }
+.form_standard .input_checkbox dt  {
+    color: #000000;
+    float: left;
+    line-height: 1.25em !important;
+    margin: 0 10px 0 0;
+    text-align: right;
+    width: 100px;
+}
+.form_standard .input_pair dd input[type=file] { /* thanks for understanding, Safari */
+    border: 0;
+}
+#fieldset-interests_group ul,
+#fieldset-ministry_interests_group ul {
+    display: block;
+    overflow: hidden;
+}
+#fieldset-interests_group ul li,
+#fieldset-ministry_interests_group ul li {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 150px;
+}
+#ministry_interests_group dd {
+    clear: both;
+    margin: 10px 0 0 40px;
+    width: 480px;
+}
+#ministry_interests_group ul li {
+    width: 180px;
+    float: left;
+}
+#fieldset-terms_group .hint {
+	margin: 2px 0 0 130px !important;
+	padding: 0 !important;
+    position: absolute !important;
+    width: 350px;
+}
+/*-- ministry interests --*/
+.ministry_list {
+    list-style: none;
+    margin: 0;
+}
+.ministry_list li {
+    margin: 0 0 5px 0;
+}
+.interests {
+    list-style: disc !important;
+}
+.interests li {
+    margin: 0 0 10px 0;
+}
+/* input helper tooltips */
+
+.input_helper {
+
+    color: #CCC !important;
+    font-style: italic !important;
+    font-size: 11px;
+    position: absolute;
+    margin: 3px 0 0 3px;
+
+}
+
+label.input_helper {
+
+    position: relative;
+    display: block;
+
+}
+
+form span.required_label {
+
+    color: #A4C044;
+    margin: 0 5px 0 0;
+
+}
+
+
+
